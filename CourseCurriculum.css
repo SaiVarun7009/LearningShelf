@@ -1,0 +1,72 @@
+
+.Description{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:beige;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.PathwayInfo{
+    width: 50%; 
+    background-color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    /* padding-left:"10px" */
+}
+
+
+.PathwayFeautures{ 
+    width: 32%; 
+}
+
+.Feauture{
+    border-radius: 1em;
+    background-color: white;
+    padding: 1.5em;
+    margin-bottom: 1em;
+}
+
+.FeautureContent{
+    display:flex;
+    justify-content:space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.FeautureHeading {
+    line-height: 4em;
+}
+
+.feature-title{
+    line-height: 2.5em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.Feautureicon {
+  margin: 1em;
+}
+
+@media screen and (max-width: 1070px) {
+    .Description{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .PathwayInfo{
+        width: 80%;
+        margin: auto;
+    }
+    .PathwayFeautures{
+        width: 80%;
+        margin: auto;
+    }
+    .Feauture{
+        justify-content: center;
+    }
+}

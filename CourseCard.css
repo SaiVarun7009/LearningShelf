@@ -1,0 +1,128 @@
+
+
+.courseCard {
+    position: relative;
+    /* border-width: 1px; */
+    /* border-color: orange; */
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    border-style:outset;
+    background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  }
+  
+  .courseImage {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .courseImage img {
+    display: block;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+  
+  .courseImageHover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  .courseCard:hover .courseImage img {
+    opacity: 0.3;
+  }
+  
+  .courseCard:hover .courseImageHover {
+    opacity: 1;
+  }
+  
+  .courseCardDescription {
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    max-width: 100%;
+    /* background-color: #4CAF50; */
+    color:grey;
+    /* font-size: 16px; */
+    /* padding: 16px 32px; */
+  }
+  
+.courseContainer-Courses{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.singleCourse{
+    height: 450px;
+    overflow: hidden;   
+     /* min-width: 300px; */
+    row-gap: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    position:relative;
+    background-color:white;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+
+.imageDiv{
+    height: 160px;
+    width: 100%;
+    /* border-top-radius: 5%; */
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.imageDiv img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.courseCardInfo{
+    text-align:left;
+    margin: 10px;
+    color: black;
+    /* background-color: azure; */
+    /* margin-right: 10px; */ 
+}
+
+
+.courseCardBtnCSS{
+  background: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    width: 90%;
+    height: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    color: aliceblue;
+    font-size:medium;
+}
+
+.nextprevbtn{
+    background: linear-gradient(to right, #103ce7, #64e9ff); 
+    border-radius: 10px;
+    margin-right: 5px;
+
+}
+
+
+/* @media screen and (max-width:1024px) {
+    .courseContainer-Courses{
+        display: flex;
+    }
+    
+} */
